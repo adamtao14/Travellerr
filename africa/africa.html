@@ -1,0 +1,205 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../every-continent-layout.css">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>Africa</title>
+        <link rel="icon" href="../images/favicon.png">
+        <script>
+            $(document).ready(function(){
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 2000, function(){
+                    window.location.hash = hash;
+                  });
+                } 
+              });
+            });
+        </script>
+        <script>
+        $(document).ready(function() {
+            $("#welcome-title").animate({top: "60px"}, 2000); 
+        });
+            
+        </script>
+        <script>
+
+               $(document).ready(function () {
+                    $('body').fadeIn(2000).removeClass('hidden');
+                   $('#start-heading').fadeIn(3000).removeClass('hidden');
+                });
+               </script>
+        
+    </head>
+    <body class="hidden">
+        
+        
+        <section id="fullscreen-intro" style="background-image: url(../other-continents-images/africa-intro.jpg);">
+            
+            
+            <div id="back"><a href="../index.html"><img src="../images/top.png" id="go-back"></a><span>Torna indietro</span></div>
+
+
+        <div class="welcoming-area">
+        <h1 id="welcome-title">Benvenuti in Africa</h1>
+        <div id="welcome-box">
+        
+            <p id="welcome-text">terzo continente in termine di grandezza con oltre 1.1 miliardi di abitanti,<br>
+                L'africa con i suoi 54 stati ospita l'15.7% della popolazione mondiale<br>
+            </p>
+            <div id="start-heading" class="hidden">
+            <h2>Clicca la freccia per andare in basso</h2>
+                <a href="#top-bar"><img src="../images/top.png" id="start-europe"></a>
+            </div>
+                
+        </div>
+            </div>
+                    </section>
+        <div id="top-bar">
+        
+            <h1>Alcuni dei posti più visitati in Africa</h1>
+        
+        </div>
+      
+        <div class="wrapper-articles">
+        <table>
+            
+            <tr>
+                <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../other-continents-images/marrakech-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Marrakech,Marocco</h3>
+                       <div class="description">
+                            <p>Chiamata anche la città rossa, Marrakech è la quarta città per dimensione del Marocco dopo la capitale, Fez e Casablanca. Questa città vivace e affascinante, ha una Medina meravigliosa, e il suo cuore pulsante è piazza Djemaa el Fna dove si incontrano acrobati, incantatori di serpenti, ballerini, musicisti, comici e cantastorie.</p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="santorini.html">Continua a leggere</a>
+                        
+                        </div>
+                      
+                   
+            
+            
+                            </div>
+                    </td>
+                <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../other-continents-images/giza-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Cairo,Egitto</h3>
+                       <div class="description">
+                            <p>Firenze considerata una delle città in ambito artisitico e culturale più famose al mondo.Qui potrete immergervi nella Firenze antica del medioevo grazie ai tanti musei che contengono dipinti,affreschi statue e molto altro...</p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="firenze.html">Continua a leggere</a>
+                        
+                        </div>
+                      
+                    </div>
+            
+            
+                            
+                    </td>
+                </tr>
+            <tr>
+            
+              <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../other-continents-images/Citt%C3%A0-del-Capo-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Citta del capo,Sud Africa</h3>
+                       <div class="description">
+                            <p>Stretta tra Oceano e monti, Città del Capo (Cape Town) è la città più turistica e frizzante del Sudafrica. Giace su una lunga ed esile penisola che si protende a sud nelle acque dell’Oceano Atlantico ed è attraversata in tutta la sua lunghezza da una dorsale montuosa. </p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="london.html">Continua a leggere</a>
+                        
+                        </div>
+                      
+                    
+            
+            
+                            </div>
+                    </td>
+                <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../other-continents-images/Joburg-thumbnail.JPG">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Johannesburg,Sud Africa</h3>
+                       <div class="description">
+                            <p>Johannesburg, la città più grande del Sudafrica e capoluogo della provincia di Gauteng, sorse nel XIX secolo come insediamento minerario per l'estrazione dell'oro. La tentacolare township di Soweto fu in passato residenza di Nelson Mandela e Desmond Tutu. Oggi, la casa in cui visse Mandela è diventata un museo. 
+                           </p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="amsterdam.html">Continua a leggere</a>
+                        
+                        </div>
+
+                            </div>
+                    </td>
+
+            </tr>
+            </table>
+            </div>
+         
+        <div id="footer">
+            <img src="../images/logo-2.png" class="logo-footer">
+          <p>© 2018 Traveller ALL RIGHTS RESERVED</p>
+            <a href="#fullscreen-intro"><img src="../images/top.png" class="top-footer"></a>
+        </div>
+
+
+        
+    </body>
+
+</html>

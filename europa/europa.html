@@ -1,0 +1,204 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../every-continent-layout.css">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>Europa</title>
+        <link rel="icon" href="../images/favicon.png">
+        <script>
+            $(document).ready(function(){
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 2000, function(){
+                    window.location.hash = hash;
+                  });
+                } 
+              });
+            });
+        </script>
+        <script>
+        $(document).ready(function() {
+            $("#welcome-title").animate({top: "60px"}, 2000); 
+        });
+            
+        </script>
+        <script>
+
+               $(document).ready(function () {
+                    $('body').fadeIn(2000).removeClass('hidden');
+                   $('#start-heading').fadeIn(3000).removeClass('hidden');
+                });
+               </script>
+        
+    </head>
+    <body class="hidden">
+        
+        
+        <section id="fullscreen-intro" style="background-image: url(../europe-images/europe-intro.jpg);">
+            
+            
+            <div id="back"><a href="../index.html"><img src="../images/top.png" id="go-back"></a><span>Torna indietro</span></div>
+
+
+        <div class="welcoming-area">
+        <h1 id="welcome-title">Benvenuti in Europa</h1>
+        <div id="welcome-box">
+        
+            <p id="welcome-text">Quarto continente in termine di grandezza con oltre 734 milioni di abitanti,<br>
+                L'europa con i suoi 48 stati ospita l'11% della popolazione mondiale<br>
+            </p>
+            <div id="start-heading" class="hidden">
+            <h2>Clicca la freccia per andare in basso</h2>
+                <a href="#top-bar"><img src="../images/top.png" id="start-europe"></a>
+            </div>
+                
+        </div>
+            </div>
+                    </section>
+        <div id="top-bar">
+        
+            <h1>Alcuni dei posti più visitati in Europa</h1>
+        
+        </div>
+      
+        <div class="wrapper-articles">
+        <table>
+            
+            <tr>
+                <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../europe-images/santorini-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Santorini,Grecia</h3>
+                       <div class="description">
+                            <p>Considerata la più romantica delle isole della Grecia e non solo, Santorini ha una forma circolare perché è parte di una parete di un grande cratere vulcanico.L’isola è un luogo spettacolare e molto particolare che custodisce la caldera sottomarina più grande del mondo</p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="santorini.html">Continua a leggere</a>
+                        
+                        </div>
+                      
+                   
+            
+            
+                            </div>
+                    </td>
+                <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../europe-images/firenze-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Firenze,Italia</h3>
+                       <div class="description">
+                            <p>Firenze considerata una delle città in ambito artisitico e culturale più famose al mondo.Qui potrete immergervi nella Firenze antica del medioevo grazie ai tanti musei che contengono dipinti,affreschi statue e molto altro...</p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="firenze.html">Continua a leggere</a>
+                        
+                        </div>
+                      
+                    </div>
+            
+            
+                            
+                    </td>
+                </tr>
+            <tr>
+            
+              <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../europe-images/london-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Londra,Inghilterra</h3>
+                       <div class="description">
+                            <p>Londra capitale del Regno Unito e dell'Inghilterra è una delle città più grandi d'Europa. È la terza piazza borsistica al mondo, dopo New York e Tokyo, e una delle principali città che influenzano il resto del mondo in fatto di cultura, comunicazione, politica, economia e arte. Londra è la città più popolata dell'Unione Europea</p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="london.html">Continua a leggere</a>
+                        
+                        </div>
+                      
+                    
+            
+            
+                            </div>
+                    </td>
+                <td>
+
+        <div class="article-preview">
+        
+                    <div class="image-article" >
+                 
+                        <img id="im-thumb" src="../europe-images/amsterdam-thumbnail.jpg">
+            
+                    </div>
+                   <div class="info-article">
+                
+                        <h3>Amsterdam,Paesi Bassi</h3>
+                       <div class="description">
+                            <p>Amsterdam, maggiore città e capitale dei Paesi Bassi, è un centro urbano incredibilmete variegato sotto moltissimi punti di vista, da quello storico a quello culturale passando anche per l'arte.In questa città una semplice passeggiata serale si trasforma in un'esperienza da portare nel cuore,</p>
+                        </div>
+            
+                    </div>
+                    
+                        <div class="keep-reading">
+                            
+                            <a href="amsterdam.html">Continua a leggere</a>
+                        
+                        </div>
+
+                            </div>
+                    </td>
+
+            </tr>
+            </table>
+            </div>
+         
+        <div id="footer">
+            <img src="../images/logo-2.png" class="logo-footer">
+          <p>© 2018 Traveller ALL RIGHTS RESERVED</p>
+            <a href="#fullscreen-intro"><img src="../images/top.png" class="top-footer"></a>
+        </div>
+
+
+        
+    </body>
+
+</html>
