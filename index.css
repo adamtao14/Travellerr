@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+html, body{
+    height: 100%;
+  
+}
+body{
+    margin: 0;
+    font-family: Raleway,sans-serif;
+    min-width: 940px;
+    overflow-x: hidden;
+    
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 15px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  outline: 1px solid slategrey;
+    border-radius: 10px;
+}
+.hidden{
+    
+    display: none;
+}
+#fullscreen-intro{
+    background-image: url("images/homepage-fullscreen-test.jpeg");
+    height: 700px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    /*filter: blur(2px);
+    /*transform: scale(1.1)*/
+    
+}
+.info-box{
+    
+    background:rgba(127, 176, 255, 0.5);
+    width: 400px;
+    padding: 70px;
+    height: 160px;
+    color: white;
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.top{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+header {
+	background:none;
+	width: 100%;
+	height: 96px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	
+}
+ 
+ul {
+	list-style: none;
+}
+ 
+li {
+	display: inline-block;
+	float: left;
+	padding: 28px;
+}
+ 
+a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+    font-size: 20px;
+}
+ 
+a:hover {
+	border-bottom: 5px solid white;
+    padding-bottom: 8px;
+    color: orangered;
+    font-size: 24px;
+    
+}
+ 
+#logo {
+	margin: 20px;
+	float: left;
+	width: 310px;
+	height: 90px;
+	background: url(images/logo-2.png) no-repeat center;
+	display: block;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+#logo:hover {
+	
+	background: url(images/logo-3.png) no-repeat center;
+    border: none;
+    padding: 0px;
+	
+}
+ 
+nav {
+	float: right;
+	padding: 10px;
+	
+}
+ 
+#menu-icon {
+	background: url(images/menu.png) no-repeat center;
+	display: hidden;
+	width: 80px;
+	height: 80px;
+    
+}
+@media only screen and (max-width : 960px) {
+    
+ 
+ header {
+ position: absolute;
+ }
+ 
+ #menu-icon {
+ display:inline-block;
+     border: none;
+
+ }
+ 
+ nav ul, nav:active ul { 
+ display: none;
+ position: absolute;
+ padding: 50px;
+ background-color:white;
+ right:10px;
+ top: 96px;
+ width: 35%;
+ margin: 0;
+ height: 200px;
+ border-radius: 10px;
+ }
+ 
+ nav:hover ul {
+ display: block;
+ }
+ 
+ nav li {
+ text-align: center;
+ width: 100%;
+ padding: 15px 0;
+ margin: 0;
+ 
+ }
+nav li a{
+    color: orangered;
+    
+    }
+    nav li a:hover{
+        text-decoration: underline;
+    }
+.dropdown {
+    float: left;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-top: 40px;
+  
+}
+#title-continents-list-two{
+    
+    font-family: Raleway, sans-serif;
+    color:#a4c5fc;
+    font-size: 300%;
+   /*text-shadow: 0px 0px 300px #000;*/
+    text-align: left;
+    margin-bottom: 150px;
+    padding-left: 30px;
+    width: 500px;
+    
+    
+}
+    .info-box{
+    
+    background:rgba(127, 176, 255, 0.5);
+    width: 400px;
+    padding: 70px;
+    height: 160px;
+    color: white;
+    position: relative;
+    top: 30%;
+    left: -10%;
+    border-radius: 20px;
+    font-size: 28px;
+    text-align: center;
+    
+}
+    
+}
+#title-continents-list{
+    margin:0 auto;
+    font-family: Raleway, sans-serif;
+    color:white;
+    font-size: 500%;
+   /*text-shadow: 0px 0px 300px #000;*/
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 130px;
+    padding-top: 0px;
+    padding-left: 60px;
+    
+}
+.titles{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+    top: 0;
+    background-size: cover;
+    background-image: url(images/background-footer.jpg);
+    
+ 
+    
+}
+#title-continents-list-two{
+    
+    font-family: Raleway, sans-serif;
+    color:white;
+    font-size: 300%;
+   /*text-shadow: 0px 0px 300px #000;*/
+    text-align: left;
+    margin-bottom: 150px;
+    padding-left: 30px;
+    width: 650px;
+    
+    
+}
+.dropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 40px;
+    
+    
+}
+
+.dropdown h2{
+    font-size: 34px;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color:white;
+    padding: 20px 16px;
+    background-color: inherit;
+    transition: color 0.3s linear;
+   -webkit-transition: color 0.3s linear;
+   -moz-transition: color 0.3s linear;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    /*background-image: url(images/wood.jpg);*/
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 300px;
+    border-radius: 10px;
+   
+}
+
+.dropdown-content a {
+    float: none;
+    color: orangered;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+   color: white;
+    background-color: orangered;
+}
+
+
+.europa{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/europe.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.europa h2{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    width: 200px;
+    top: 50px;
+    left: 60%;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+.europa h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+#choice{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 190px;
+    left: 10%;
+    width: 200px;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+#choice:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.africa{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/africa.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.asia{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/asia.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.asia h2{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 380px;
+    left: 10%;
+    width: 200px;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+.asia h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.australia{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/australia.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.australia h2{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 270px;
+    left: 10%;
+    width: 200px;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+.australia h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.nordamerica{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/north.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.nordamerica h2{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 370px;
+    width: 560px;
+    left: 10%;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+.nordamerica h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.sudamerica{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/south.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.sudamerica h2{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 370px;
+    left: 5%;
+    width: 520px;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+.sudamerica h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.antartide{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: url('images/antartica.jpg') no-repeat 50% 50%;
+    background-attachment: fixed;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.antartide h2{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 50px;
+    left: 5%;
+    width: 350px;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+}
+.antartide h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.arrow{
+    height: 60px;
+    width:60px;
+    float: right;
+   position: relative;
+    top:360px;
+    left: -20px;
+    color: white;
+}
+.contact{
+    background-image: url("images/contact.jpg");
+    height: 750px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(px);
+    overflow: hidden;
+}
+.contact h2{
+    
+    width: 900px;
+    color: white;
+    font-family: Raleway,sans-serif;
+    font-size: 34px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+#form{
+    margin: 0 auto;
+    width: 320px;
+    background:rgba(255,255,255,0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+#email-contact{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 40px;
+    font-family: Raleway,sans-serif;
+    padding:10px;
+    background:white url("images/email.png") right no-repeat;
+    
+}
+#name-contact{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 40px;
+    font-family: Raleway,sans-serif;
+    padding: 10px;
+    background:white url("images/name.png") right no-repeat;
+    
+    
+}
+#subject-contact{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 40px;
+    font-family: Raleway,sans-serif;
+    padding: 10px;
+    background:white url("images/subject.png") right no-repeat;
+    
+    
+}
+#message-contact{
+    
+    width: 300px;
+    border-radius: 10px;
+    height: 170px;
+    padding: 10px;
+    font-family: Raleway,sans-serif;
+    resize: none;
+   
+}
+#submit-contact{
+    
+    height:40px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-top: 20px;
+    color: white;
+    font-family: Raleway,sans-serif;
+    background-color: cornflowerblue;
+    transition: color 0.5s linear;
+   -webkit-transition: color 0.5s linear;
+   -moz-transition: color 0.5s linear;
+    font-size: 20px;
+    border-radius: 5px;
+    
+    
+}
+#submit-contact:hover{
+
+    background-color: orangered;
+    box-shadow: 2px 5px #888888;   
+}
+.informations{
+    width: 100%;
+    background-image: url("images/information.jpg");
+    height: 700px;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+.informations h1{
+    margin: 0 auto;
+    width: 290px;
+    padding: 40px;
+    font-size: 44px;
+    color: white;
+}
+.team{
+    margin: 0 auto;
+    width: 700px;
+}
+.profile-picture{
+    width: 296px;;
+    height: 200px;
+    background-color: cornflowerblue;
+     border: 2px solid white;
+}
+.profile-picture img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.info-container{
+    
+    margin: 0 auto;
+    width: auto;
+}
+.team-showcase{
+    width: 300px;
+    height: 500px;
+    background-color: orangered;
+    color: white;
+    margin: 20px;
+     border: 2px solid white;
+    border-radius: 10px;
+}
+.team-showcase{
+    float: left;
+}
+.description ul li{
+    text-align: left;
+    font-size: 18px;
+    font-family: Oswald,sans-serif;
+}
+.nome{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.team-showcase:hover .overlay {
+  opacity: 1;
+}
+#footer{
+    
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background-image: url(images/background-footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#footer p{
+    
+    color: white;
+    font-family: Raleway,sans-serif;
+    margin: 0;
+    text-align: center;
+    top: 45%;
+    position: relative;
+    left: -120px;
+}
+.logo-footer{
+    float: left;
+    width: 310px;
+	height: 140px;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+.top-footer{
+    float: right;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 35px;
+    right: 30px;
+}

@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway');  
+    body{
+        
+         background-image: url("images/contact.jpg");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-y: hidden;
+        
+        }
+        .hidden{
+            display: none;
+        }
+        div{
+            
+            margin: 0 auto;
+            width: 600px;
+            background:rgba(255,255,255,0.5);
+            padding: 50px;
+            border-radius: 10px;
+            font-family: Raleway,sans-serif;
+            font-size: 15px;
+            margin-top: 5%;
+            text-align: center;
+            color: orangered;
+            
+            
+        }
+        h1{
+            margin-bottom: 90px;
+        }
+        a{
+            
+            
+            font-size: 24px;
+            color: #2377ff;
+            text-decoration: none;
+            font-weight: bold;
+            border: 3px solid white;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: color 0.5s linear;
+           -webkit-transition: color 0.5s linear;
+           -moz-transition: color 0.5s linear;
+        }
+        a:hover{
+            background-color: cornflowerblue;
+            color: white;
+        }
+        
+        
+    </style>
+    
+</head>
+<body class="hidden">
+    
+
+<div>
+    <img src="images/logo-2.png">
+    <h1>Domanda inviata con successo<br>grazie per a verci aiutato a migliorare Traveller</h1> 
+    
+    <a href="http://adamtaoufiq-com.stackstaging.com/traveller/index.html">Torna a Traveller</a>
+</div>
+     
+    <script>
+
+               $(document).ready(function () {
+                    $('body').fadeIn(2000).removeClass('hidden');
+                });
+               </script>
+    
+</body>
+
+
+</html>

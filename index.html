@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="icon" href="images/favicon.png">
+        <script>
+            $(document).ready(function(){
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 2000, function(){
+                    window.location.hash = hash;
+                  });
+                } 
+              });
+            });
+        </script>
+        
+       
+        <script type=text/javascript>
+                var delay="8";
+                var count='0';
+                var Texts=new Array();
+                Texts[0]="Benvenuto/a su Traveller,comincia subito ad esplorare il mondo comodamente da casa tua";
+                Texts[1]="Per scegliere un continente puoi scorrere in basso oppure sceglierne uno dalla lista nella sezione continenti";
+                Texts[2]="Per domande e consigli riguardanti il sito puoi contattarci nel form di contatto che trovi in fondo alla pagina";
+                function changeText(){
+                $("#text-change").html(Texts[count]).fadeIn(1000).delay(5000).fadeOut(1000);
+                count++;
+                if(count==Texts.length){count='0';}
+                setTimeout("changeText()",delay*1000);
+                }
+
+        </script>
+        
+    </head>
+    <body class="hidden"  onload="changeText();">
+            
+        <section id="fullscreen-intro">
+            
+            <div class="info-box" id="text-change"></div>
+
+        </section>
+        
+        
+
+        <header id="nav">
+            <a href="index.html" id="logo"></a>
+            <nav>
+                <a href="#" id="menu-icon" ></a>
+                <ul>
+                    
+                    
+                    
+                    <li>
+                        <a href="#cont" class="options">Continenti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#inform" class="options">Informazioni</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contact-form" class="options">Contattaci</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+           <div class="continents-list">
+        
+                    <div class="titles" id="cont">
+                        <div class="dropdown">
+                            <button class="dropbtn" id="here"><h2>Lista continenti</h2>
+                                 </button>
+                                    <div class="dropdown-content">
+                                              <a href="#eu">Europa</a>
+                                              <a href="#af">Africa</a>
+                                              <a href="#as">Asia</a>
+                                              <a href="#au">Australia</a>
+                                              <a href="#na">Nord America</a>
+                                              <a href="#sa">Sud America</a>
+                                              <a href="#an">Antartide</a> 
+                                    </div>
+                        </div> 
+                    <h1 id="title-continents-list">Continenti</h1>
+                    <h2 id="title-continents-list-two">Scegli un continente per cominciare l'esplorazione</h2>
+                        
+                    </div>
+               
+                           <div class="europa con" id="eu">
+
+                               <a href="europa/europa.html"><h2>Europa</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+                           </div>
+                           <div class="africa con" id="af">
+                               <a href="africa/africa.html">
+                               <h2 id="choice">Africa</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+
+                           </div>
+                           <div class="asia con" id="as">
+                                <a href="asia/asia.html">
+                                    <h2 >Asia</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+
+                           </div>
+                           <div class="australia con" id="au">
+                               <a href="africa/africa.html">
+                                   <h2>Australia</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+
+                           </div>
+                           <div class="nordamerica" id="na">
+                               <a href="africa/africa.html">
+                                   <h2>Nord America</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+
+                           </div>
+                           <div class="sudamerica con" id="sa">
+                               <a href="africa/africa.html">
+                                   <h2>Sud America</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+
+                           </div>
+                           <div class="antartide con" id="an">
+                               <a href="africa/africa.html">
+                                   <h2>Antartide</h2></a>
+                               <a href="#nav"><img src="images/top.png" title="Torna su" class="arrow"></a>
+
+
+                           </div>
+               
+               <script>
+
+               $(document).ready(function () {
+                    $('body').fadeIn(2000).removeClass('hidden');
+                });
+               </script>
+               
+               <script>
+               
+               $(".options").hover(function() {
+                        $(this).animate({fontSize: "24px"}, "slow");
+                    }, function() {
+                        $(this).animate({fontSize: "20px"}, "slow");
+                    });
+               
+               </script>
+                 
+              
+          </div>
+        <div class="contact" id="contact-form">
+            
+        
+          <h2>Se hai qualche domanda oppure qualche idea per il sito, non esitare a contattarci</h2>
+            
+            <form id="form" method="post" action="php/action.php">
+                
+            <input type="text" id="name-contact" placeholder="nome" autocomplete="off" name="name-contact" required>
+                <br>
+                <input type="text" id="subject-contact" placeholder="soggeto" autocomplete="off" name="subject-contact" required>
+                <br>
+             <input type="text" id="email-contact" placeholder="email" autocomplete="off" name="email-contact" required>
+                <br>
+             <textarea id="message-contact" placeholder="Cosa vuoi chiederci..." name="message-contact" required></textarea>
+                <br>
+                <input type="submit" id="submit-contact" name="submit-contact">
+                
+            
+            </form>
+        
+        </div>
+
+        <div class="informations" id="inform">
+        
+            <h1>Team del sito</h1>
+            <div class="team">
+                
+                <div class="info-container">
+            
+                <div class="team-showcase">
+               
+                    <div class="profile-picture">
+                    
+                        <img src="images/224367196-profile-pics.jpg">
+                    
+                    </div>
+                    <div class="description">
+                        <p class="nome">Adam Taoufiq</p>
+                    
+                        <ul>
+                                <li>- Programmazione sito</li>
+                                <li>- Design sito</li>
+                                <li>- Effetti javascript</li>
+                        
+                        </ul>
+                    
+                    </div>
+               
+                </div>
+                <div class="team-showcase">
+               
+                    <div class="profile-picture">
+                    
+                        <img src="images/224367196-profile-pics.jpg">
+                    
+                    </div>
+                    <div class="description">
+                        <p class="nome">Umberto Paroli</p>
+                    
+                        <ul>
+                                <li>- Design contenuti</li>
+                                <li>- Scrittura contenuti</li>
+                                <li>- Revisione contenuti</li>
+                        
+                        </ul>
+                    
+                    </div>
+               
+                </div>
+            </div>
+        
+                                
+        </div>
+    </div>
+
+      <div id="footer">
+            <img src="images/logo-2.png" class="logo-footer">
+          <p>© 2018 Traveller ALL RIGHTS RESERVED</p>
+            <a href="#nav"><img src="images/top.png" class="top-footer"></a>
+        </div>
+        
+        
+ 
+    </body>
+
+</html>

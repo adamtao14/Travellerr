@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+html, body{
+    height: 100%;
+    min-width: 840px;
+  resize: none;
+}
+body{
+    margin: 0;
+    font-family: Raleway,sans-serif;
+    min-width: 840px;
+    overflow-x: hidden;
+    resize: none;
+    
+    
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 15px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  outline: 1px solid slategrey;
+    border-radius: 10px;
+}
+#fullscreen-intro{
+    height: 75%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    /*filter: blur(1px);*/
+ 
+}
+.hidden{
+    
+    display: none;
+}
+#ratings-and-title{
+    width: 100%;
+    position: relative;
+    top: 350px;
+    height:172px;
+}
+#article-title{
+    
+    font-size: 54px;
+    color: white;
+    float: left;
+    margin: 20px;
+}
+.rating-button{
+ 
+    background-color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    float:left;
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+#ratings{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    
+}
+#like-button{
+    color: green;
+    border-radius: 10px 0 0 0;
+}
+#dislike-button{
+    color: red;
+    border-radius: 0 10px 0 0;
+}
+.green-bg{
+    background-color: green;
+    color: white;
+}
+.red-bg{
+    background-color: red;
+    color: white;
+}
+
+
+#article-container{
+    margin: 0 auto;
+    border: 2px solid orangered;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+#article-container tr td{
+    text-align: center;
+    width: 400px;
+    text-align: justify;
+    padding: 20px;
+}
+#recomend{
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 40px;
+}
+#back{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+}
+#back span{
+    position: relative;
+    top: -12px;
+    color: white;
+}
+#go-back{
+    
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-90deg);
+}
+#recomended-box-intro{
+    margin-top: 50px;
+    border: 2px solid orangered;
+    width: 950px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+#recomended-title{
+    margin: 0 auto;
+    width: 710px;
+    text-align: center;
+    padding: 20px;
+    color: #4da0c6;
+    border-right: 2px solid orangered;
+    border-left: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    border-radius: 10px;
+}
+#recomended-content tr td img{
+    border-radius: 20px;
+    border: 1px solid orangered;
+}
+#recomended-content{
+    margin: 0 auto;
+    width: 400px;
+    padding: 30px;
+}
+.container {
+  position: relative;
+  width: 50%;
+    margin-bottom: 40px;
+}
+
+.image {
+  display: block;
+  width: 700px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4da0c6;
+  overflow: hidden;
+  width: 200%;
+  height: 0;
+  transition: .5s ease;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 26px;
+    width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.discover a{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    position: absolute;
+    top: 59%;
+    left: 40%;
+    border-radius: 5px;
+}
+#footer{
+    
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background-image: url(images/background-footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#footer p{
+    
+    color: white;
+    font-family: Raleway,sans-serif;
+    margin: 0;
+    text-align: center;
+    top: 45%;
+    position: relative;
+    left: -120px;
+}
+.logo-footer{
+    float: left;
+    width: 310px;
+	height: 140px;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+h2{
+    color: orangered;
+}
+.top-footer{
+    float: right;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 35px;
+    right: 30px;
+}
